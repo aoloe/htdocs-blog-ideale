@@ -12,6 +12,7 @@ Here are some notes about my experience! (if there is any interest for it, I can
 - And if you want to sum the values corresponding to a dropdown list:
       =SUMME(WENN(INDIREKT(ADRESSE(1;SPALTE())):INDIREKT(ADRESSE(ZEILE()-1;SPALTE()))="am";0.7))+
        SUMME(WENN(INDIREKT(ADRESSE(1;SPALTE())):INDIREKT(ADRESSE(ZEILE()-1;SPALTE()))="pm";0.5))
+  This is a "Matrice" operation, so you will have to press ctrl+shift+enter to quit the formula editing.
 
 - If you want to create some macros, you have to first right click on the toolbar, choose "Menüband anpasen" and in the "Hauptregister" list activate the "Entwicklertools" option.
 
