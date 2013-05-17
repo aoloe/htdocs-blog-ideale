@@ -46,3 +46,5 @@ Here are some notes about my experience! (if there is any interest for it, I can
 - Adding a button:
   "On the Developer tab, in the Controls group, click Insert, and then under Form Controls, click Button"
   Then assign the macro through the context menu on the button.
+
+- If you want to avoid that during the user can edit the field formulas, in "start > cells > format > Blatt schützen" activate the option "Formattieren" (in the same dialog you can then switch on and the off the option)
