@@ -50,3 +50,5 @@ Here are some notes about my experience! (if there is any interest for it, I can
 - If you want to avoid that during the user can edit the field formulas, in "start > cells > format > Blatt schützen" activate the option "Formattieren" (in the same dialog you can then switch on and the off the option)
 
 - If you want to keep some columns always visible on the left, select the first "normal" column and run "Ansicht > Fenster einfrieren > Fenster efinfrieren"
+
+- If you want to print some columns and have the first n coloumns printed on the left of them, go to "Seitenlayout > Blattoptionen" and in the "Blatt" tab set the "Wiederholungsspalten links" to the columns you have fixated above.
