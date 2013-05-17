@@ -38,3 +38,7 @@ Here are some notes about my experience! (if there is any interest for it, I can
           Next i
           
       End Sub
+
+- Adding a button:
+  "On the Developer tab, in the Controls group, click Insert, and then under Form Controls, click Button"
+  Then assign the macro through the context menu on the button.
