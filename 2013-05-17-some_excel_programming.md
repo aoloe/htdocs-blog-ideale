@@ -12,7 +12,6 @@ Here are some notes about my experience! (if there is any interest for it, I can
 - If you want to create some macros, you have to first right click on the toolbar, choose "Menüband anpasen" and in the "Hauptregister" list activate the "Entwicklertools" option.
 
 - Here is the macro i've created to copy the currently selected five cells n times:
-
       Sub multiplikation()
       '
       ' multiplikation Makro
