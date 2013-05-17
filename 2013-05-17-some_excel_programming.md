@@ -13,33 +13,29 @@ Here are some notes about my experience! (if there is any interest for it, I can
 
 - Here is the macro i've created to copy the currently selected five cells n times:
 
-    Sub multiplikation()
-    '
-    ' multiplikation Makro
-    ' 5 ausgewählten zellen n mal nach rechts kopieren
-    '
-    '
-    Dim n
-        ' Debug.Print
-        If (Not Selection.Columns.Count = 5) And (Not Selection.Rows.Count = 5) Then
-            MsgBox ("Please select one week of five days")
-            Exit Sub
-        End If
-        n = InputBox("Anzahl Wochen", "Wochen duplizieren")
-        If (Not IsNumeric(n)) Or (Not n > 0) Then
-            MsgBox ("No week entered")
-            Exit Sub
-        End If
-        Selection.Copy
-        r = Selection.Row()
-        c = Selection.Column()
-        For i = 1 To n
-            Cells(r, c + (i * 5)).Select
-            ActiveSheet.Paste
-        Next i
-        
-        Cells(r, c).Select
-        
-        
-        
-    End Sub
+      Sub multiplikation()
+      '
+      ' multiplikation Makro
+      ' 5 ausgewählten zellen n mal nach rechts kopieren
+      '
+      '
+      Dim n
+          ' Debug.Print
+          If (Not Selection.Columns.Count = 5) And (Not Selection.Rows.Count = 5) Then
+              MsgBox ("Please select one week of five days")
+              Exit Sub
+          End If
+          n = InputBox("Anzahl Wochen", "Wochen duplizieren")
+          If (Not IsNumeric(n)) Or (Not n > 0) Then
+              MsgBox ("No week entered")
+              Exit Sub
+          End If
+          Selection.Copy
+          r = Selection.Row()
+          c = Selection.Column()
+          For i = 1 To n
+              Cells(r, c + (i * 5)).Select
+              ActiveSheet.Paste
+          Next i
+          
+      End Sub
