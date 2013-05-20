@@ -55,3 +55,18 @@ Here are some notes about my experience! (if there is any interest for it, I can
 - If you want to print some columns and have the first n coloumns printed on the left of them, go to "Seitenlayout > Blattoptionen" and in the "Blatt" tab set the "Wiederholungsspalten links" to the columns you have fixated above.
 
 - If you want to create complex formulas, you can enlarge the edit area on top and insert line breaks with alt-return (but there seems to be no way to insert tabs for indenting, you will have to add spaces)
+
+- And if your field gets too complicated, it might be an option to run a macro each time the fields (in a specific range) are updated:
+
+      Private Sub Worksheet_Change(ByVal Target As Range)
+          Dim KeyCells As Range
+
+          Set KeyCells = Range("C3:R7")
+    
+          If Not Application.Intersect(KeyCells, Range(Target.Address)) _
+                 Is Nothing Then
+              Call sum(Target.Column, Target.Row)
+          End If
+      End Sub
+  
+  You will have to add it to the "worksheet" macros, which you can edit through the "Code anzeigen" context menu on the worksheet's tab.
