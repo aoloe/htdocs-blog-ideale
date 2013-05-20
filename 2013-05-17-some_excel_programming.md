@@ -70,3 +70,10 @@ Here are some notes about my experience! (if there is any interest for it, I can
       End Sub
   
   You will have to add it to the "worksheet" macros, which you can edit through the "Code anzeigen" context menu on the worksheet's tab.
+
+- Howto:
+  - Neues Kind
+  - Tage planen
+  - Planung kopieren
+  - Kind entfernen
+  - Total erzwingen
